@@ -1,0 +1,102 @@
+Zad 1:
+  - streszczanie tekstu
+  - klasyfikacja tekstu do kategorii tematycznych
+  - komponowanie muzyki
+  (ponieważ wymagają inwencji twórczej i charakteru co nadaje im ludzkości)
+  
+Zad 2:
+  - tłumaczenie tekstu
+  - odpowiadanie na proste pytania zadawane w jęz. naturalnym
+  - rozwiązywanie układów równań
+  - układanie rozkładu jazdy
+  - rozwiązywanie układów równań liniowych
+  - symboliczne obliczanie pochodnych
+  - symboliczne całkowanie
+  - kierowanie samochodem
+  (poniważ są to czynności, które wymagają wyłącznie nauczenia maszyny pewnych zwrotów do rozpoznawania i reagowania lub są rozwiązywalne za pomocą różnych algorytmów matematycznych)
+  
+Zad 3:
+Skutecznie implementowane:
+  - rozmowa towarzyska
+  - odpowiadanie na pytania klientów w internetowej infolinii
+  (ponieważ nie wymagają szybkości i poważnego zrozumienia przekazywanej wiadomości)
+  
+Nieskutecznie implementowane:
+  - dyskusja polityczna - do polityki potrzeba ludzkiej wrażliwości i przekonań oraz musiałaby dużo kłamać i się nie przyznawać :P
+  - dyskusja naukowa - dla SI nie byłoby dyskusji naukowej ponieważ posiada wszelką zaimplementowaną wiedzę i zawsze posiadałoby najpoprawniejsze opinie
+  - odpowiadanie na pytania klientów w telefonicznej infolinii - proces rozpoznawania głosu jest za wolny i zbyt wadliwy + najpewniej bardzo często słowa byłyby źle rozpoznane ze względu na jakość zasięgu telefonii komórkowej
+  
+Zad 4:
+Wybrane boty:
+https://www.ikea.com/pl/pl/customer-service/contact-us/ - chatbot Billie
+https://www.cleverbot.com/ - cleverbot
+
+  1)
+    Billie - bot stworzony jedynie jako asystent. Na jakiekolwiek personalne pytanie sugerował połączenie z człowiekiem lub zmieniał temat rozmowy na obsługę klienta
+    
+    cleverbot - bot udający człowieka - podczas krótkiej rozmowy, bot z przekonaniem trzykrotnie starał się mi wmówić, że jest człowiekiem i nie akceptował zupełnie innej możliwości
+    
+  2)
+    a)
+      Billie - bot opowiedział dosyć suchy żart, który brzmiał jak coś przygotowanego dokładnie na tę prośbę przez zespół promocyjny Ikea
+      
+      cleverbot - po prośbie opowiedział żart (rodzaju “puk,puk … kto tam?” po angielsku) wymagający mojej aktywności
+      
+    b)
+      Billie - bot kompletnie sobie nie poradził, a na pytanie o cytat Shakespeara zaczął mi opowiadać żart o taborecie
+      
+      cleverbot - bot nie reagował na prośby o cytaty znanych osób i zmieniał temat. Kiedy poprosiłem o mój cytat, powiedział coś czego nie powiedziałem, a kiedy zaprzeczyłem powiedział że jego życie jest kłamstwem, ponieważ ja jestem robotem.
+      
+    c)
+      Billie - bot w zasadzie nie zapamiętywał kontekstu rozmowy, także nie było szansy na nawiązanie wypowiedzi do słów kluczowych
+      
+      cleverbot - powiedziałem botowi, że pochodzę z Grecji - po wymianie paru wiadomości spytałem się go skąd pochodzę i nie był w stanie odpowiedzieć - najpierw odpowiedział zupełnie nieadekwatnie do pytania, a za drugim razem odpowiedział "You come from the mind of your programmer."
+      
+    d)
+      Billie - bot nie radzi sobie z wieloma pytaniami - odpowiada (błędnymi!!!) linkami do strony Ikei
+      
+      cleverbot - bot skutecznie odpowiada na różne pytania, często odmawia odpowiedzi
+      
+    e)
+      Billie - bot nie pamięta poprzednich wiadomości
+      
+      cleverbot - bot nie pamięta początku konwersacji, ale utrzymuje wątki w zasięgu kilku wiadomości
+
+    f)
+      Billie - bot nie zadaje pytań, poza propozycją dalszej pomocy lub połączeniem z pracownikiem
+      
+      cleverbot - bot często pytał mnie o rzeczy o które go pytałem wcześniej
+      
+    g)
+      Billie - bot zignorował każde personalne pytanie, jedynie odsyłając link do artykułów na stronie Ikea
+      
+      cleverbot - bot bardzo często odpowiadał wymijająco, był bardzo skryty
+    
+    h)
+      Billie - ciężko mówić o zmianie tematu rozmowy, jeżeli jedna strona zupełnie jej nie podtrzymuje
+      
+      cleverbot - bot często zmieniał temat rozmowy, ale robił to w stosunkowo “ludzki” sposób
+      
+    i)
+      Billie - bot zupełnie nie trzymał wątków
+      
+      cleverbot - bot utrzymywał wątki na kilka wiadomości
+      
+  3)
+    Billie jest ewidentnie botem do pomocy klientowi Ikei w sprawie zgłaszania usterek i pomocy. Ma bardzo ograniczone możliwości i w większości przypadków nawet zawodzi w zakresie swoich oczekiwanych możliwości.
+    
+    Cleverbot jest stosunkowo rozbudowanym botem, który nie chce się przyznać do bycia botem. Ma stosunkowo ograniczoną pamięć, ale potrafi podtrzymywać rozmowę, a nawet samemu ją rozpoczynać.
+    
+  4)
+    Na rzecz tego zadania zmieniłem Billiego na bardziej “myślącego bota”:
+    https://www.personalityforge.com/chat/cyber_ty
+    
+    Podchodząc do tego zadania przewidywałem, że rozmowa będzie bardzo nieciekawa i prawdopodbnie się zapętli wokół kilku pytań.
+
+    Przeprowadziłem rozmowę między botami i była bardzo chaotyczna. Po przywitaniu i paru ogólnych wiadomościach Cyber Ty zaczął bardzo agresywnie wyzywać Cleverbota (bez większego powodu), na co Cleverbot odpowiadał swoimi "łagodniejszymi" wyzwiskami. Ostatecznie kłótnie przerwało niezrozumienie Cleverbota. W dalszej części rozmowy Cyber Ty zaczął zadawać bardzie rozbudowane pytania, z którymi Cleverbot sobie nie radził - prawdopodobnie limit przetwarzanych znaków. Po krótkiej rozmowie boty przeszły do ponownego wyzywania się, ale Cyber Ty zaczął się w pewnym momencie powtarzać - słowo w słowo.
+    
+    Wniosek z rozmowy:
+      Treść rozmowy przewidziałem stosunkowo trafnie, ale bardzo zaskoczyła mnie prędka wzajemna agresja botów.
+      
+  5)
+    Próbowałem zdenerwować Cleverbota - większość wyzwisk ignorował, ale okazjonalnie odpowiadał “pasywnie agresywnie”. Cyber Ty był dużo bardziej agresywny ale nie odpowiadał wulgarnie, a bardziej zwrotami rodzaju “Maybe you should practice your s##t talking with a baby bot before you step up to me…” (które się często powtarzały).
