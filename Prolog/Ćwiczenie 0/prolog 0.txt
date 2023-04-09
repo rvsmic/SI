@@ -1,0 +1,69 @@
+lubi(jan, pawel).
+lubi(pawel,krzysztof).
+lubi(pawel,jan).
+lubi(jan,bartek).
+lubi(bartek,jan).
+
+lubi(adam, ewa).
+lubi(ewa, adam).
+lubi(pablo, oliwia).
+lubi(pablo, kasia).
+lubi(oliwia, pablo).
+lubi(kasia, pablo).
+
+mezczyzna(jan).
+mezczyzna(pawel).
+mezczyzna(jan).
+mezczyzna(krzysztof).
+mezczyzna(bartek).
+mezczyzna(adam).
+mezczyzna(pablo).
+
+% X i Y sie lubia
+przyjazn(X, Y) :- 
+    lubi(X,Y), 
+    lubi(Y,X).
+
+% X lubi Y lub Y lubi X, ale nie oba na raz bo to przyjazn
+niby_przyjazn(X,Y) :- 
+    (   
+    	lubi(X,Y); 
+    	lubi(Y,X)
+    ),
+    nieprzyjazn(X,Y).
+
+% X i Y sie nie lubia
+nieprzyjazn(X,Y) :- 
+    \+przyjazn(X,Y).
+
+% X lubi tylko Y
+loves(X,Y) :-
+    lubi(X,Y),
+    \+ (
+    	(
+        lubi(X,A),
+        A \= Y
+    	)
+    ).
+
+% X lubi tylko Y, a Y lubi tylko X
+true_love(X,Y) :- 
+    loves(X,Y),
+    loves(Y,X).
+
+% powyzsze relacje ale tylko mezczyzna i kobieta
+hetero_loves(X,Y) :-
+    (   
+    	loves(X,Y),
+    	mezczyzna(X),
+    	\+mezczyzna(Y)
+    );
+    (   
+    	loves(X,Y),
+    	mezczyzna(Y),
+    	\+mezczyzna(X)
+    ).
+
+hetero_true_love(X,Y) :-
+    hetero_loves(X,Y),
+    hetero_loves(Y,X).

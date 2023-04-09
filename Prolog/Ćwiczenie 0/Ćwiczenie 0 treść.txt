@@ -1,0 +1,6 @@
+Ćwiczenie 0:
+Zapisz reguły dla:
+nieprzyjazn(X,Y),
+niby_przyjazn(X,Y) 
+loves(X,Y) 1) może być na zasadzie wzajemności i wyłączności 2) dodaj fakt płeć
+true_love(X,Y) 
